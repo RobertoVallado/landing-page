@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Personal Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Personal hub for Roberto Vallado — access my notes, technical projects, CV, and creative works.">
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Roberto Vallado — Personal Hub">
+    <meta property="og:description" content="Access my projects, notes, CV, and creative work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://robertovallado.dev">
+
+    <link rel="icon" type="image/x-icon" href="./assets/maple.ico">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>Roberto Vallado</h1>
+        <p class="subtitle">
+            Personal Hub
+        </p>
+
+        <p class="description">
+            From technical notes to creative projects.
+        </p>
+
+        <ul class="links">
+            <li>
+                <a href="https://archive.robertovallado.dev">
+                    📦 Archive
+                    <span>Notes, journal, knowledge base & blog posts.</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="https://cv.robertovallado.dev">
+                    📄 CV
+                    <span>Resume</span>
+                </a>
+            </li> -->
+            <!-- <li>
+                <a href="https://art.robertovallado.dev">
+                    🎨 Art
+                    <span>Shop & gallery (coming soon)</span>
+                </a>
+            </li> -->
+        </ul>
+
+        <footer>
+            © <span id="year"></span>
+        </footer>
+    </main>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
