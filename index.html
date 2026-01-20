@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Registry Hub</title>
+    <title>Registry Hub | Roberto Vallado</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="Registry Hub - central index for my projects and subdomains">
+    <meta name="description" content="Registry Hub - central index for my projects and subdomains">
 
     <!-- Open Graph for social sharing -->
     <meta property="og:title" content="Roberto Vallado — Registry Hub">
@@ -14,49 +13,74 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://robertovallado.dev">
 
-    <link rel="icon" type="image/x-icon" href="./assets/maple.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="icon" type="image/x-icon" href="./assets/code.ico">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <main class="container">
-        <h1>Subdomain Index</h1>
-        <p class="subtitle">
-            Registry Hub
-        </p>
+    <div class="page">
+        <header class="hero">
+            <h1>Roberto Vallado</h1>
+            <p class="terminal-text">
+                <span id="typed"></span><span class="cursor">|</span>
+            </p>
 
-        <p class="description">
-            From technical notes to creative projects.
-        </p>
+            <div class="hero-icons">
+                <a href="https://www.instagram.com/vallado_rico" target="_blank" aria-label="Instagram">
+                    <img src="./assets/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://github.com/RobertoVallado" target="_blank" aria-label="GitHub">
+                    <img src="./assets/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/roberto-vallado/" target="_blank" aria-label="LinkedIn">
+                    <img src="./assets/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </header>
 
-        <ul class="links">
-            <li>
-                <a href="https://archive.robertovallado.dev" target="_blank" rel="noopener noreferrer">
-                    📦 Archive
-                    <span>Notes, journal, knowledge base & blog posts.</span>
-                </a>
-            </li>
-            <!-- <li>
-                <a href="https://cv.robertovallado.dev">
-                    📄 CV
-                    <span>Resume</span>
-                </a>
-            </li> -->
-            <!-- <li>
-                <a href="https://art.robertovallado.dev">
-                    🎨 Art
-                    <span>Shop & gallery (coming soon)</span>
-                </a>
-            </li> -->
-        </ul>
+        <main class="container">
+            <h1>Registry Hub</h1>
+            <p class="subtitle">
+                From technical notes to creative projects.
+            </p>
 
-        <footer>
-            © <span id="year"></span> - Roberto Vallado
-        </footer>
-    </main>
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+            <!-- <p class="description">
+                From technical notes to creative projects.
+            </p> -->
+
+            <ul class="links">
+                <li>
+                    <a href="https://archive.robertovallado.dev" target="_blank" rel="noopener noreferrer">
+                        📦 Archive
+                        <span>Knowledge base & notes.</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="https://cv.robertovallado.dev">
+                        📄 CV
+                        <span>Resume</span>
+                    </a>
+                </li> -->
+                <!-- <li>
+                    <a href="https://art.robertovallado.dev">
+                        🎨 Art
+                        <span>Shop & gallery (coming soon)</span>
+                    </a>
+                </li> -->
+            </ul>
+
+            <footer>
+                © Roberto Vallado - <span id="year"></span>
+            </footer>
+        </main>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
